@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bylisful Baking And Cuisine Order Form</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+     
+         <nav >
+               <p>Follow us on: facebook | instagram | twitter</p>
+          <ul class="navigation">
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Place Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav> 
+
+
+    <h1>Place Your Order</h1>
+
+    <form action=" " method="post">
+
+        <h2>Contact Information</h2>
+        <div class="form-group">
+            <label for="name">Full Name:</label> <br>
+            <input type="text" id="name" name="customer_name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label> <br>
+            <input type="email" name="customer_email" >
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label> <br>
+            <input type="tel"  name="customer_phone">
+        </div>
+
+        <hr>
+
+        <h2>Order Details</h2>
+
+        <div>
+            <label for="instructions">Special Instructions:</label>
+            <br>
+            <textarea id="instructions" name="special_instructions" rows="4" cols="50"></textarea>
+        </div>
+
+        <hr>
+
+        <h2>Delivery or Pickup</h2>
+
+        <div>
+            <input type="radio" id="pickup" name="delivery_option" value="pickup" required>
+            <label for="pickup">Pickup</label>
+        </div>
+
+        <div>
+            <input type="radio" id="delivery" name="delivery_option" value="delivery">
+            <label for="delivery">Delivery (additional fees may apply)</label>
+        </div>
+
+        <div>
+            <label for="date">Preferred Date:</label>
+            <input type="date" id="date" name="preferred_date" required>
+        </div>
+
+        <hr>
+        
+        <button type="submit">Submit Order</button>
+
+    </form>
+
+</body>
+</html>
+   
